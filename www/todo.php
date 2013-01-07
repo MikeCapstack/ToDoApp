@@ -9,8 +9,17 @@ class Todo {
   public $ListID;
   public $UserID;
 
-  function __construct($ID){
-    $this->Title = 'foo';
+  function __construct($ID=FALSE){
+    if($ID !== FALSE){
+      $this->load($ID);
+    }
+  }
+
+  function load($ID){
+    
+  }
+  function save(){
+    
   }
 
   function renderHtml(){
